@@ -5,7 +5,7 @@ export const portfolioData = {
   personal: {
     name: "Abhisekh Nayek",
     title: "Full-Stack Developer",
-    description: "` Bringing ideas to life through code, design, and motion.`",
+    description: "That language is an instrument of human reason, and not merely a medium for the expression of thought, is a truth generally admitted.",
   },
 
   about: {
