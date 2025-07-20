@@ -1,7 +1,26 @@
 "use client"
 
 import { useInView } from "react-intersection-observer"
-import { Brain, MessageCircle, Users, Clock, Lightbulb, Shield, Sparkles, Zap, Target, Award } from "lucide-react"
+import { 
+  Brain, 
+  MessageCircle, 
+  Users, 
+  Clock, 
+  Lightbulb, 
+  Shield, 
+  Sparkles, 
+  Zap, 
+  Target,
+  Code,
+  Globe,
+  BookOpen,
+  Database,
+  Terminal,
+  Cpu,
+  FileCode,
+  Languages,
+  Award
+} from "lucide-react"
 import SectionAnimations from "@/components/section-animations"
 
 interface SkillsProps {
@@ -24,6 +43,27 @@ const softSkillIcons = {
   "Critical Thinking": Zap,
   Adaptability: Shield,
   "Time Management": Clock,
+}
+
+const technicalSkillIcons = {
+  "JavaScript": FileCode,
+  "TypeScript": FileCode,
+  "React": Cpu,
+  "Node.js": Terminal,
+  "Python": Code,
+  "SQL": Database,
+}
+
+const languageIcons = {
+  "English": Globe,
+  "Spanish": Globe,
+  "French": Globe,
+}
+
+const certificationIcons = {
+  "AWS Certified Developer": Award,
+  "Google Cloud Professional": Award,
+  "Microsoft Azure Fundamentals": Award,
 }
 
 export default function Skills({ data }: SkillsProps) {
@@ -51,14 +91,18 @@ export default function Skills({ data }: SkillsProps) {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
                 <h3 className="text-xl font-bold text-white mb-4 text-center">Technical Skills</h3>
                 <div className="space-y-3">
-                  {data.technical.slice(0, 10).map((skill, index) => (
-                    <div
-                      key={index}
-                      className="bg-gradient-to-r from-blue-500/20 to-purple-600/20 p-3 rounded-lg text-center"
-                    >
-                      <span className="text-gray-300 font-medium">{skill}</span>
-                    </div>
-                  ))}
+                  {data.technical.slice(0, 10).map((skill, index) => {
+                    const IconComponent = technicalSkillIcons[skill as keyof typeof technicalSkillIcons] || Code
+                    return (
+                      <div
+                        key={index}
+                        className="bg-gradient-to-r from-blue-500/20 to-purple-600/20 p-3 rounded-lg flex items-center space-x-2"
+                      >
+                        <IconComponent size={16} className="text-blue-400" />
+                        <span className="text-gray-300 text-sm">{skill}</span>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
 
@@ -85,14 +129,18 @@ export default function Skills({ data }: SkillsProps) {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
                 <h3 className="text-xl font-bold text-white mb-4 text-center">Languages</h3>
                 <div className="space-y-3">
-                  {data.languages.slice(0, 10).map((language, index) => (
-                    <div
-                      key={index}
-                      className="bg-gradient-to-r from-yellow-500/20 to-orange-600/20 p-3 rounded-lg text-center"
-                    >
-                      <span className="text-gray-300 font-medium">{language}</span>
-                    </div>
-                  ))}
+                  {data.languages.slice(0, 10).map((language, index) => {
+                    const IconComponent = languageIcons[language as keyof typeof languageIcons] || Globe
+                    return (
+                      <div
+                        key={index}
+                        className="bg-gradient-to-r from-yellow-500/20 to-orange-600/20 p-3 rounded-lg flex items-center space-x-2"
+                      >
+                        <IconComponent size={16} className="text-yellow-400" />
+                        <span className="text-gray-300 text-sm">{language}</span>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
 
@@ -100,11 +148,18 @@ export default function Skills({ data }: SkillsProps) {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all duration-300">
                 <h3 className="text-xl font-bold text-white mb-4 text-center">Certifications</h3>
                 <div className="space-y-3">
-                  {data.certifications.slice(0, 10).map((cert, index) => (
-                    <div key={index} className="bg-gradient-to-r from-pink-500/20 to-red-600/20 p-3 rounded-lg">
-                      <span className="text-gray-300 text-sm">{cert}</span>
-                    </div>
-                  ))}
+                  {data.certifications.slice(0, 10).map((cert, index) => {
+                    const IconComponent = certificationIcons[cert as keyof typeof certificationIcons] || BookOpen
+                    return (
+                      <div
+                        key={index}
+                        className="bg-gradient-to-r from-pink-500/20 to-red-600/20 p-3 rounded-lg flex items-center space-x-2"
+                      >
+                        <IconComponent size={16} className="text-pink-400" />
+                        <span className="text-gray-300 text-sm">{cert}</span>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
             </div>
