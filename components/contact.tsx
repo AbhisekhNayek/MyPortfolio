@@ -115,21 +115,51 @@ export default function Contact({ data }: ContactProps) {
                 </div>
 
                 <div className="flex space-x-4 pt-6">
-                  <button className="bg-gradient-to-r from-gray-700 to-gray-800 p-3 rounded-full hover:from-gray-600 hover:to-gray-700 transition-all duration-300 transform hover:scale-110">
-                    <Github className="text-white" size={20} />
-                  </button>
-                  <button className="bg-gradient-to-r from-blue-600 to-blue-700 p-3 rounded-full hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-110">
-                    <Linkedin className="text-white" size={20} />
-                  </button>
-                  <button className="bg-gradient-to-r from-pink-500 to-purple-600 p-3 rounded-full hover:from-pink-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-110">
-                    <Instagram className="text-white" size={20} />
-                  </button>
-                  <button className="bg-gradient-to-r from-blue-400 to-cyan-500 p-3 rounded-full hover:from-blue-300 hover:to-cyan-400 transition-all duration-300 transform hover:scale-110">
-                    <Twitter className="text-white" size={20} />
-                  </button>
-                  <button className="bg-gradient-to-r from-blue-700 to-blue-800 p-3 rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-110">
-                    <Facebook className="text-white" size={20} />
-                  </button>
+                  <a
+                    href="https://github.com/AbhisekhNayek"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="bg-gradient-to-r from-gray-700 to-gray-800 p-3 rounded-full hover:from-gray-600 hover:to-gray-700 transition-all duration-300 transform hover:scale-110">
+                      <Github className="text-white" size={20} />
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/abhisekhnayek1755/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="bg-gradient-to-r from-blue-600 to-blue-700 p-3 rounded-full hover:from-blue-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-110">
+                      <Linkedin className="text-white" size={20} />
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/byte.of.abhi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="bg-gradient-to-r from-pink-500 to-purple-600 p-3 rounded-full hover:from-pink-400 hover:to-purple-500 transition-all duration-300 transform hover:scale-110">
+                      <Instagram className="text-white" size={20} />
+                    </button>
+                  </a>
+                  <a
+                    href="https://x.com/byteofabhi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="bg-gradient-to-r from-blue-400 to-cyan-500 p-3 rounded-full hover:from-blue-300 hover:to-cyan-400 transition-all duration-300 transform hover:scale-110">
+                      <Twitter className="text-white" size={20} />
+                    </button>
+                  </a>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="bg-gradient-to-r from-blue-700 to-blue-800 p-3 rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-110">
+                      <Facebook className="text-white" size={20} />
+                    </button>
+                  </a>
                 </div>
               </div>
 
