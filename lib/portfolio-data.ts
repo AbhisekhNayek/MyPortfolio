@@ -99,31 +99,26 @@ export const portfolioData = {
   experience: {
     workExperience: [
       {
-        title: "Frontend Developer",
-        company: "Outlier AI",
-        duration: "May 2025 - Present",
-        type: "Remote",
-      },
-      {
-        title: "Software Developer",
+        title: "Founding Engineer",
         company: "Jobcode",
         duration: "Jan 2025 - Present",
         type: "Full-time",
       },
       {
-        title: "Web Developer",
-        company: "University Of North Bengal",
-        duration: "Jan 2023 - Jun 2023",
+        title: "Frontend Developer",
+        company: "Outlier AI",
+        duration: "May 2025 - Oct 2025",
         type: "Part-time",
+      },
+      
+      {
+        title: "JavaScript Developer",
+        company: "HackerRank",
+        duration: "May 2025 - Jul 2025",
+        type: "Open-Source",
       },
     ],
     internships: [
-      {
-        title: "Frontend Developer",
-        company: "VRV Security",
-        duration: "Nov 2024 - Dec 2024",
-        type: "Internship",
-      },
       {
         title: "Software Developer",
         company: "Genomics Lab",
@@ -131,19 +126,25 @@ export const portfolioData = {
         type: "Internship",
       },
       {
-        title: "Service Desk Analyst",
-        company: "Zapuza",
+        title: "Web Developer",
+        company: "University Of North Bengal",
+        duration: "Jan 2023 - Jun 2023",
+        type: "Internship",
+      },
+      {
+        title: "Wordpress Developer",
+        company: "Midnapore College (Autonomous)",
         duration: "Jan 2022 - Jun 2022",
         type: "Internship",
       },
     ],
     hackathons: [
       {
-        name: "Untop Talent Park 2025",
-        role: "Team Lead",
-        project: "E-Learning Platform with Live Coding",
+        name: "Open Gateway Hackathon - India",
+        role: "Backend Developer",
+        project: "AgriTrust Connect - Network-Aware Rural Farming & Insurance Platform",
         result: "Finalist",
-        date: "March 2025",
+        date: "October 2025",
       },
       {
         name: "GrabHack Shaping-the-Future",
@@ -289,22 +290,26 @@ export const portfolioData = {
       demoUrl: "https://github.com/AbhisekhNayek/Whisper-Line",
     },
     {
-      name: "Spotify Talk",
-      description:
-        "A full-stack music streaming platform with real-time chat, admin control, and live user tracking.",
-      technologies: [
-        "Full-Stack",
-        "Music Streaming",
-        "Real-time Chat",
-        "Admin Panel",
+      "name": "AgriTrust Connect",
+      "description": "A full-stack platform for rural farming and insurance, built with Next.js and TypeScript, featuring a network-aware dashboard for claim filing, offline sync, truck deliveries, equipment rentals, and an embedded map view.",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "react-leaflet",
+        "i18n",
+        "Node.js"
       ],
-      features: [
-        "Music Streaming",
-        "Real-time Chat",
-        "Admin Control",
-        "Live User Tracking",
+      "features": [
+        "Responsive UI with Tailwind CSS and Framer Motion",
+        "Mock Data for Claims, Trucks, Weather Alerts, and Equipment Rentals",
+        "Internationalization (English, Hindi, Bengali)",
+        "Client-Side Map View with react-leaflet",
+        "Offline-Aware UI Indicators with Toast Notifications",
+        "Full-Stack Architecture with Mock Backend Data"
       ],
-      demoUrl: "https://github.com/AbhisekhNayek/SpotifyTalk",
+      "demoUrl": "https://github.com/AbhisekhNayek/Agri-Trust-Connect"
     },
     {
       name: "Premium Dashboard",
