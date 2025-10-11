@@ -10,7 +10,11 @@ export const portfolioData = {
 
   about: {
     description:
-      "I'm Abhisekh Nayek, a Full-Stack Developer always curious for new tech. Based in Midnapore, India, I hold an MCA from the University of North Bengal and currently work as a Software Developer at JobCode. My passion lies in crafting intuitive UI effects, animations, and dynamic user experiences. I'm a well-organized problem solver with keen attention to detail, eager to work on ambitious projects with positive, driven teams. Outside of development, I enjoy cricket, sci-fi/fantasy movies, and exploring new culinary experiences.",
+      "  👋 Hi, I’m Abhisekh Nayek — a Software Developer passionate about building scalable systems that make a real impact.
+          From hackathons and open-source work to freelance web and data projects, I love collaborating with people who share a passion for innovation. I’m skilled in Python, JavaScript, Next.js, and React, with hands-on experience in backend development, data analysis, and system design.
+          Beyond work, I share programming and career insights through my LinkedIn series #byteofabhi — because tech, to me, is about empowering people, not just writing code.
+          📩 Collaborations: byte.of.abhi@gmail.com
+          💬 Views are my own.",
     highlights: [
       "Well-organized",
       "Problem Solver",
