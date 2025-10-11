@@ -10,11 +10,7 @@ export const portfolioData = {
 
   about: {
     description:
-      "  👋 Hi, I’m Abhisekh Nayek — a Software Developer passionate about building scalable systems that make a real impact.
-          From hackathons and open-source work to freelance web and data projects, I love collaborating with people who share a passion for innovation. I’m skilled in Python, JavaScript, Next.js, and React, with hands-on experience in backend development, data analysis, and system design.
-          Beyond work, I share programming and career insights through my LinkedIn series #byteofabhi — because tech, to me, is about empowering people, not just writing code.
-          📩 Collaborations: byte.of.abhi@gmail.com
-          💬 Views are my own.",
+      "Hi, I’m Abhisekh Nayek — a Software Developer passionate about building scalable systems that make a real impact. From hackathons and open-source work to freelance web and data projects, I love collaborating with people who share a passion for innovation. I’m skilled in Python, JavaScript, Next.js, and React, with hands-on experience in backend development, data analysis, and system design. Beyond work, I share programming and career insights through my LinkedIn series @byteofabhi — because tech, to me, is about empowering people, not just writing code.",
     highlights: [
       "Well-organized",
       "Problem Solver",
